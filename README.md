@@ -369,11 +369,22 @@ ImGui 기반 편집 툴을 통해 사용자가 데이터를 직접 조정하고 
 
 ### Runtime Object System
 
-* `CParticle`
-* `CTrail_Buffer`
-* `CTrail_Effect`
-* `CEffect_Group`
-* `CEffect_Manager`
+### Runtime Object System
+
+- [`Effect_Manager`](src/Runtime/Effect_Manager.cpp)
+  - 데이터 파일 탐색 및 로드
+  - 타입별 Prototype 등록
+  - Object Pool 및 런타임 객체 생성 관리
+
+- [`Effect_Group`](src/Runtime/Effect_Group.cpp)
+  - 복수 객체의 시작 시간 및 실행 상태 관리
+  - Group Transform과 Local Transform 처리
+
+- [`Particle`](src/Runtime/Particle.cpp)
+  - Particle 객체의 런타임 상태 및 데이터 처리
+
+- [`Trail_Effect`](src/Runtime/Trail_Effect.cpp)
+  - Trail 객체의 런타임 동작 처리
 
 ### Buffer / Runtime Data
 
