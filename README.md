@@ -359,15 +359,17 @@ ImGui 기반 편집 툴을 통해 사용자가 데이터를 직접 조정하고 
 
 ### Internal Tool
 
-* `CImgui_Window_EffectEdit`
-* `CImgui_Tab_EffectTabBase`
-* `CImgui_Tab_ParticleEdit`
-* `CImgui_Tab_TrailEdit`
-* `CImgui_Tab_TrailBufferEdit`
-* `CImgui_Window_EffectGroup`
-* `CImgui_Window_Mask`
+- [`Imgui_Window_EffectEdit`](src/Tool/Imgui_Window_EffectEdit.cpp)
+  - Effect 편집 Window 및 객체 편집 흐름 관리
 
-### Runtime Object System
+- [`Imgui_Tab_EffectTabBase`](src/Tool/Imgui_Tab_EffectTabBase.cpp)
+  - Effect 타입별 공통 편집 인터페이스
+
+- [`Imgui_Tab_ParticleEdit`](src/Tool/Imgui_Tab_ParticleEdit.cpp)
+  - Particle 데이터 편집
+
+- [`Imgui_Window_EffectGroup`](src/Tool/Imgui_Window_EffectGroup.cpp)
+  - Group 구성 및 실행 시간 편집
 
 ### Runtime Object System
 
@@ -388,9 +390,14 @@ ImGui 기반 편집 툴을 통해 사용자가 데이터를 직접 조정하고 
 
 ### Buffer / Runtime Data
 
-* `CVIBuffer_Instancing`
-* `CVIBuffer_Trail`
-* `CVIBuffer_Particle_Point`
+- [`VIBuffer_Instancing`](src/Buffer/VIBuffer_Instancing.cpp)
+  - 다수 Instance의 상태 데이터 관리 및 GPU Buffer 갱신
+
+- [`VIBuffer_Particle_Point`](src/Buffer/VIBuffer_Particle_Point.cpp)
+  - Particle Instance 데이터 처리
+
+- [`VIBuffer_Trail`](src/Buffer/VIBuffer_Trail.cpp)
+  - 실시간 Trail Vertex 데이터 생성 및 갱신
 
 ### Shader / Rendering Data
 
