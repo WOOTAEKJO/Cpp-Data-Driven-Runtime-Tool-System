@@ -354,9 +354,9 @@ src/
 
 ### Shader / Rendering Data
 
-* `Shader_Effect_Particle`
-* `Shader_Effect_Trail`
-* `Shader_Effect_Mesh`
+* [`Shader_Effect_Particle`](src/Shader/Particle_Shader.hlsl)
+* [`Shader_Effect_Trail`](src/Shader/Trail_Shader.hlsl)
+* [`Shader_Effect_Mesh`](src/Shader/Mesh_Shader.hlsl)
 
 ---
 
