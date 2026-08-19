@@ -340,6 +340,21 @@ ImGui 기반 편집 툴을 통해 사용자가 데이터를 직접 조정하고 
 
 ---
 
+## Source Code
+
+본 Repository의 `src` 디렉터리는 전체 팀 프로젝트 소스가 아닌,
+제가 담당한 시스템의 구조와 구현을 확인할 수 있도록 정리한 핵심 코드입니다.
+
+원본 프로젝트의 공통 Engine / GameObject / Resource 시스템 등에 의존하는 코드가 포함되어 있어
+본 Repository 단독으로는 빌드되지 않습니다.
+
+코드는 다음 영역을 중심으로 구성되어 있습니다.
+
+- `src/Tool` : ImGui 기반 데이터 편집 툴
+- `src/Runtime` : 런타임 객체 및 Manager / Group 시스템
+- `src/Buffer` : Instancing 및 Dynamic Buffer 처리
+- `src/Shader` : Effect 렌더링용 HLSL Shader
+
 ## 12. 관련 코드
 
 ### Internal Tool
